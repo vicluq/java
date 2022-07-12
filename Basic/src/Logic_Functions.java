@@ -1,6 +1,6 @@
 public class Logic_Functions {
     public static void main(String[] args) {
-        /* TODO Condicionais */
+        // ! Condicionais
 
         // As expressões lógicas e comparativas são iguais a C
         // A estrutura dos condicionais são iguais
@@ -19,12 +19,18 @@ public class Logic_Functions {
             System.out.println("User has no correct age and/or permisson");
         }
 
-        /* TODO Estruturas Repetitivas */
+        // ! Estruturas Repetitivas
 
-        // O While, for, do/while são iguais
+        // * O While, for, do/while são iguais
 
+        // * For each - Iteráveis (lembra o de CPP)
+        int[] primes = {2, 3, 5, 7, 11, 13, 17, 19, 23};
 
-        /* TODO Funções para strings */
+        for(int prime: primes) { 
+            // ... Do something
+        }
+
+        // ! Funções para strings
 
         // toLowerCase(), toUpperCase(), trim()
         // substring(inicio, [fim])
@@ -34,7 +40,7 @@ public class Logic_Functions {
         
         String my_name = "   Victoria Luquet";
         
-        System.out.println(my_name.trim());
+        System.out.println(my_name.trim()); // Remove os espacos em branco do inicio/fim da string
         System.out.println(my_name.toUpperCase());
         System.out.println(my_name.indexOf('V'));
         
@@ -42,7 +48,7 @@ public class Logic_Functions {
         System.out.println("Average is: " + average_value + " and " + average(5, 7));
     }
     
-    /* TODO Funções (muito igual a C) */
+    // ! Funções (muito igual a C)
     // Chamamos ela na main
     public static int average(int x, int y) {
         return (x + y) / 2;

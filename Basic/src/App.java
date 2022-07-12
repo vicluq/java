@@ -7,8 +7,7 @@ public class App {
     // How to print to console:  System.out.println
     System.out.println("Primeiro com Javinha (um cu pra config)");
 
-    /* TODO Variáveis e Tipos */
-
+    // ! Variáveis e Tipos
     // int -> inteiros (4bytes)
     // long -> inteiros maiores (8bytes)
     // byte -> inteiro de 1 byte
@@ -18,6 +17,7 @@ public class App {
     // float -> ponto flutuante (4bytes)
     // char -> um caracter (2 bytes em Java) em unicode
     // String -> ja entra em OOP, cadeia de char
+    // final [Type] -> constante
 
     double salario = 2500.45;
     int duracao_contrato = 5;
@@ -26,7 +26,7 @@ public class App {
 
     boolean isLogged = true;
 
-    /* TODO Saída de dados */
+    // ! Saída de dados
 
     // Três Funções
     System.out.println("Saida com o println"); // Tem \n no fim e podemos concatenar
@@ -40,8 +40,11 @@ public class App {
 
     // String formatada (o printf pega a puntuação de acordo com o formato do PC - PT-BR/Eng)
     System.out.printf("\nTotal: %.2f\n", total_ganho);
+
+    // Metodo String.format("formatacao de printf", string)
     
-    // Mudando o Locale do Java
+    // ! Mudando o Locale do Java
+    // Isso é importante pra entrada de dadosß
     Locale.setDefault(Locale.US);
     System.out.printf("Total: %.2f\n", total_ganho);
 
@@ -52,19 +55,19 @@ public class App {
     // Resumo: printf é igual a C e os outros dois são a moda JS
 
     
-    /* TODO Entrada */
+    // ! Entrada
 
-    // Objeto scanner
+    // * Objeto scanner
     Scanner data_entry = new Scanner(System.in);
 
-    // Lendo string
+    // * Lendo string
     String name = data_entry.next(); // Lê até espaço 
     String compliment = data_entry.nextLine(); // Lê até quebra de linha
 
-    // Lendo char (o type retornado é string, logo usamos charAt(0))
+    // * Lendo char (o type retornado é string, logo usamos charAt(0))
     char caracter = data_entry.next().charAt(0);
 
-    // Lendo outros tipos - next<TypeName>()
+    // ! Lendo outros tipos - next<Type>()
     double coins = data_entry.nextDouble();
 
     // OBS: qubra de linha pendente (le normal e depois usa nextLine)
@@ -75,14 +78,14 @@ public class App {
     data_entry.close();
     
 
-    /* TODO Processamento de Dados e Casting */
+    // ! Processamento de Dados e Casting
     // Atribuições -> normal
     
     // Casting (igual a C)
     float value = (float) salario;  
 
 
-    /* TODO Funções Math.sqrt, pow,abs,  etc */
+    // ! Funções Math.sqrt, pow,abs,  etc
     double solution = Math.sqrt(Math.pow(5, 7));
 
   }
