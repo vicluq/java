@@ -4,7 +4,7 @@ import java.util.Scanner; // para configurar entrada de dados
 public class App {
 
   public static void main(String[] args) {
-    // How to print to console:  System.out.println
+    // How to print to console: System.out.println
     System.out.println("Primeiro com Javinha (um cu pra config)");
 
     // ! Variáveis e Tipos
@@ -30,7 +30,7 @@ public class App {
 
     // Três Funções
     System.out.println("Saida com o println"); // Tem \n no fim e podemos concatenar
-    
+
     System.out.print("Saida com o print!\n"); // Não tem \n no fim e podemos concatenar
 
     System.out.printf("Saida com o printf!\n"); // F de FORMATADO (string formatada)
@@ -38,11 +38,12 @@ public class App {
     // Printando variáveis
     System.out.print(total_ganho);
 
-    // String formatada (o printf pega a puntuação de acordo com o formato do PC - PT-BR/Eng)
+    // String formatada (o printf pega a puntuação de acordo com o formato do PC -
+    // PT-BR/Eng)
     System.out.printf("\nTotal: %.2f\n", total_ganho);
 
     // Metodo String.format("formatacao de printf", string)
-    
+
     // ! Mudando o Locale do Java
     // Isso é importante pra entrada de dadosß
     Locale.setDefault(Locale.US);
@@ -54,14 +55,13 @@ public class App {
 
     // Resumo: printf é igual a C e os outros dois são a moda JS
 
-    
     // ! Entrada
 
     // * Objeto scanner
     Scanner data_entry = new Scanner(System.in);
 
     // * Lendo string
-    String name = data_entry.next(); // Lê até espaço 
+    String name = data_entry.next(); // Lê até espaço
     String compliment = data_entry.nextLine(); // Lê até quebra de linha
 
     // * Lendo char (o type retornado é string, logo usamos charAt(0))
@@ -71,21 +71,21 @@ public class App {
     double coins = data_entry.nextDouble();
 
     // OBS: qubra de linha pendente (le normal e depois usa nextLine)
-    // Ao pegar um valor normalmente e apertar enter p confirmar, o \n fica pendente no buffer e o nextline consome ela
-    // Basta dar outro nextLine extra antes do que queremos dar para pegar o conteúdo
+    // Ao pegar um valor normalmente e apertar enter p confirmar, o \n fica pendente
+    // no buffer e o nextline consome ela
+    // Basta dar outro nextLine extra antes do que queremos dar para pegar o
+    // conteúdo
 
     // Quando não precisarmos mais
     data_entry.close();
-    
 
     // ! Processamento de Dados e Casting
     // Atribuições -> normal
-    
+
     // Casting (igual a C)
-    float value = (float) salario;  
+    float value = (float) salario;
 
-
-    // ! Funções Math.sqrt, pow,abs,  etc
+    // ! Funções Math.sqrt, pow, abs, etc
     double solution = Math.sqrt(Math.pow(5, 7));
 
   }

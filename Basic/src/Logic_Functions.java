@@ -1,3 +1,4 @@
+
 public class Logic_Functions {
     public static void main(String[] args) {
         // ! Condicionais
@@ -46,6 +47,14 @@ public class Logic_Functions {
         
         int average_value = average(5, 7);
         System.out.println("Average is: " + average_value + " and " + average(5, 7));
+        
+        // ! Arrays
+        // Definimos o tamanho (quantia de elem) dele com o 'new' -> new aloca memoria
+        
+        double [] results = new double[10]; // array com 10 espaços
+        double [] results2 = {1.3, 1.5}; // Inicialização com alocação automatica
+
+
     }
     
     // ! Funções (muito igual a C)
